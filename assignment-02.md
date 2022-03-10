@@ -20,67 +20,67 @@ and push to your github repository.
 .  
 .  
   * $W(n)=5W(n/4)+n$
-.  * log_b a = log_4 5 = 1.16
-    k = 1
-    since log_b a < k ->
-    O(n) = O(n^1.16)
+  . * log_b a = log_4 5 = 1.16
+    * k = 1
+    * since log_b a < k ->
+    * O(n) = O(n^1.16)
 .  
 .  
 .  
 .  
   * $W(n)=7W(n/7)+n$
-    log_b a = log_7 7 = 1
-    k = 1
-    p = 0
-    O(n) = O(n*logn)
+    * log_b a = log_7 7 = 1
+    * k = 1
+    * p = 0
+    * O(n) = O(n*logn)
 .  
 .  
 .  
 .  
   * $W(n)=9W(n/3)+n^2$
-  . log_b a = 2
-    k = 2
-    p = 0
-    since log_b a = k ->
-    O(n) = O(n*logn)
+    * log_b a = 2
+    * k = 2
+    * p = 0
+    * since log_b a = k ->
+    * O(n) = O(n*logn)
 .  
 .  
 .  
 .  
   * $W(n)=8W(n/2)+n^3$
-    log_b a = 3
-    k = 3
-    since log_b a = k ->
-    O(n) = O(n^2 * logn)
+    * log_b a = 3
+    * k = 3
+    * since log_b a = k ->
+    * O(n) = O(n^2 * logn)
 .  
 .  
 .  
 .  
 .  
   * $W(n)=49W(n/25)+n^{3/2}\log n$
-  * log_25 49 = 1.209...
-  * k = 3/2 = 1.5
-  * since log_b a < k -->
-  * O(n) = O(n^3/2 * logn)
+    * log_25 49 = 1.209...
+    * k = 3/2 = 1.5
+    * since log_b a < k -->
+    * O(n) = O(n^3/2 * logn)
 .  
 .  
 .  
 .  
 .  
   * $W(n)=W(n-1)+2$
-.  work + constant --> O(n)
+  .  * work + constant --> O(n)
 .  
 .  
 .  
 .  
   * $W(n)= W(n-1)+n^c$, with $c\geq 1$
-.  
+  .  * 
 .  
 .  
 .  
 .  
   * $W(n)=W(\sqrt{n})+1$
-
+    * 
 
 2. Suppose that for a given task you are choosing between the following three algorithms:
 
