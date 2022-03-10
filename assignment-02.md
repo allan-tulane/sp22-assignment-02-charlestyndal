@@ -20,7 +20,7 @@ and push to your github repository.
 .  
 .  
   * $W(n)=5W(n/4)+n$
-  . * log_b a = log_4 5 = 1.16
+    * log_b a = log_4 5 = 1.16
     * k = 1
     * since log_b a < k ->
     * O(n) = O(n^1.16)
@@ -68,19 +68,22 @@ and push to your github repository.
 .  
 .  
   * $W(n)=W(n-1)+2$
-  .  * work + constant --> O(n)
+    * work + constant --> O(n)
 .  
 .  
 .  
 .  
   * $W(n)= W(n-1)+n^c$, with $c\geq 1$
-  .  * 
+    * W(n-1) = W(n-2) + (n-1)^c
+    * W(n) = 1^c + 2^c + 3^c = n^(c+1)
+    * O(n^c)
 .  
 .  
 .  
 .  
   * $W(n)=W(\sqrt{n})+1$
-    * 
+    * W(n) = W(sqrt{n} + 1) = W(n^1/2)
+    * O(log_2(n))
 
 2. Suppose that for a given task you are choosing between the following three algorithms:
 
