@@ -1,6 +1,6 @@
 # CMPS 2200 Assignment 2
 
-**Name:**_________________________
+**Name:** Charles Tyndal
 
 In this assignment we'll work on applying the methods we've learned to analyze recurrences, and also see their behavior
 in practice. As with previous
@@ -12,43 +12,63 @@ and push to your github repository.
 
 1. Derive asymptotic upper bounds of work for each recurrence below.
   * $W(n)=2W(n/3)+1$
-.  
-.  
+    * log_b a = log_3 2 == .6209
+    * k == 0
+    * since log_b a > k ->
+    * O(n) = O(n^log_3 2)
 .  
 .  
 .  
   * $W(n)=5W(n/4)+n$
-.  
+.  * log_b a = log_4 5 = 1.16
+    k = 1
+    since log_b a < k ->
+    O(n) = O(n^1.16)
 .  
 .  
 .  
 .  
   * $W(n)=7W(n/7)+n$
-.  
+    log_b a = log_7 7 = 1
+    k = 1
+    p = 0
+    O(n) = O(n*logn)
 .  
 .  
 .  
 .  
   * $W(n)=9W(n/3)+n^2$
-.  
+  . log_b a = 2
+    k = 2
+    p = 0
+    since log_b a = k ->
+    O(n) = O(n*logn)
 .  
 .  
 .  
 .  
   * $W(n)=8W(n/2)+n^3$
+    log_b a = 3
+    k = 3
+    since log_b a = k ->
+    O(n) = O(n^2 * logn)
 .  
 .  
 .  
 .  
 .  
   * $W(n)=49W(n/25)+n^{3/2}\log n$
+  * log_25 49 = 1.209...
+  * k = 3/2 = 1.5
+  * since log_b a < k -->
+  * O(n) = O(n^3/2 * logn)
 .  
 .  
 .  
 .  
 .  
   * $W(n)=W(n-1)+2$
-.  
+.  work + constant --> O(n)
 .  
 .  
 .  
@@ -79,6 +99,7 @@ and push to your github repository.
 
     What are the asymptotic running times of each of these algorithms?
     Which algorithm would you choose?
+      I would choose algorithm 3 as its big O would be O(n^2) which is the lowest value given the information since the first would be O(n^2.3...) and the second algorithm would be O(c^n)
 
 
 3. Now that you have some practice solving recurrences, let's work on
